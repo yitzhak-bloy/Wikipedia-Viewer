@@ -8,7 +8,7 @@ const  App = () => {
     <div className="App">
       <h1>מציג ויקפדיה</h1>
       <a href="https://he.wikipedia.org/wiki/Special:Random" rel="noopener noreferrer" target="_blank" >
-        דף אקראי
+        יותר מזל משכל
       </a> 
       <Search />
     </div>

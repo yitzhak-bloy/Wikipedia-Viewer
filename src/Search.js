@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
 const Search = () => {
-
-  const [search, setSearch] = useState('שועל');
+  const [input, setInput] = useState('');
+  const [search, setSearch] = useState('')
   const [resp, setResp] = useState({});
+
+  const handleChange = (sentence) => {
+    setInput(sentence.target.value);
+  };
+
+  const handleClick = () => {
+    setSearch(input)
+  }
 
   useEffect(() => {
     fetchData();
@@ -24,11 +32,22 @@ const Search = () => {
   return (
     <div>
       <h1>חיפוש</h1>
+      <input 
+        type="string" 
+        name="quantity"           
+        onChange={handleChange}
+        className='inputRomanNumeralConverter'
+      />  
+      <button onClick={handleClick} >חפש</button>
      { 
       resp[0] ? 
-        <p>{resp[3][0]}</p>
+        <div>
+          <a href={resp[3][0]} rel="noopener noreferrer" target="_blank" >
+            {resp[0]}
+          </a> 
+        </div>
       :
-        <p>לא ידוע</p>
+        <p>"הקש לחיפוש או בחר "יותר מזל משכל</p>
       }
     </div>
   )
