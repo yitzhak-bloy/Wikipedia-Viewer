@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import SearchResult from './searchResult';
 
 const Search = () => {
   const [input, setInput] = useState('');
@@ -45,6 +46,7 @@ const Search = () => {
           <a href={resp[3][0]} rel="noopener noreferrer" target="_blank" >
             {resp[0]}
           </a> 
+          <SearchResult resp={resp} />
         </div>
       :
         <p>"הקש לחיפוש או בחר "יותר מזל משכל</p>
