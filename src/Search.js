@@ -42,14 +42,9 @@ const Search = () => {
       <button onClick={handleClick} >חפש</button>
      { 
       resp[0] ? 
-        <div>
-          <a href={resp[3][0]} rel="noopener noreferrer" target="_blank" >
-            {resp[0]}
-          </a> 
           <SearchResult resp={resp} />
-        </div>
       :
-        <p>"הקש לחיפוש או בחר "יותר מזל משכל</p>
+        <p>" חפש או בחר " יותר מזל משכל</p>
       }
     </div>
   )

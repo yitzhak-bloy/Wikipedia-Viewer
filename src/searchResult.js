@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import './searchResult.css';
 
 const SearchResult = ({ resp }) => {
   let names = resp[1];
@@ -6,10 +7,15 @@ const SearchResult = ({ resp }) => {
 
   return (
     <div>
-        <h1>אני כאן</h1>
-          {names.map(name => (
-          <h2>{name}</h2>
-          ))}
+      {
+        names.map(name => (
+          <div key={name} >
+            <a href={urls[names.indexOf(name)]} rel="noopener noreferrer" target="_blank" >
+              <h2 className='results'>{name}</h2>
+            </a> 
+          </div>
+        ))
+      }
     </div>
   )
 }

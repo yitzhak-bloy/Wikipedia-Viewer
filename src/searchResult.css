@@ -1,0 +1,18 @@
+a {
+  text-decoration: none; 
+}
+
+.results {
+  color: rgb(24, 19, 12);
+  padding: 10px;
+  border: black;
+  border: 3px solid green;
+  width: 300px;
+  text-decoration: none;
+  background-color: rgb(255, 206, 133);
+}
+
+.results:hover {
+  color: green;
+  text-decoration: underline overline;
+}
