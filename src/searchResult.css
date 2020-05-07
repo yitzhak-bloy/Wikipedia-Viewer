@@ -1,8 +1,15 @@
 a {
-  text-decoration: none; 
+  text-decoration: none;
+  width: 300px; 
 }
 
 .results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.result {
   color: rgb(24, 19, 12);
   padding: 10px;
   border: black;
@@ -10,9 +17,10 @@ a {
   width: 300px;
   text-decoration: none;
   background-color: rgb(255, 206, 133);
+  margin: 10px;
 }
 
-.results:hover {
+.result:hover {
   color: green;
   text-decoration: underline overline;
 }

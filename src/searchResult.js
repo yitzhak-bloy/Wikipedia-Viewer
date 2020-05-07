@@ -6,12 +6,12 @@ const SearchResult = ({ resp }) => {
   const urls = resp[3];
 
   return (
-    <div>
+    <div className='results'>
       {
         names.map(name => (
           <div key={name} >
             <a href={urls[names.indexOf(name)]} rel="noopener noreferrer" target="_blank" >
-              <h2 className='results'>{name}</h2>
+              <h2 className='result'>{name}</h2>
             </a> 
           </div>
         ))

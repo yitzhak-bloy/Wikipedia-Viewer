@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SearchResult from './searchResult';
+import './Search.css'
 
 const Search = () => {
   const [input, setInput] = useState('');
@@ -38,8 +39,11 @@ const Search = () => {
         name="quantity"           
         onChange={handleChange}
         className='inputRomanNumeralConverter'
+        dir="rtl"
       />  
+      <h1></h1> 
       <button onClick={handleClick} >חפש</button>
+      
      { 
       resp[0] ? 
           <SearchResult resp={resp} />
