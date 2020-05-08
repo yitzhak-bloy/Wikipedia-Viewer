@@ -6,8 +6,9 @@ import './App.css';
 const  App = () => {
   return (
     <div className="App">
-      <h1>מציג ויקפדיה</h1>
-      <a href="https://he.wikipedia.org/wiki/Special:Random" rel="noopener noreferrer" target="_blank" >
+      <h2>מציג ויקפדיה</h2>
+      <p className='subtitle'> !כל דף ויקפדיה שאתה רוצה</p>
+      <a href="https://he.wikipedia.org/wiki/Special:Random" rel="noopener noreferrer" target="_blank" className="random" >
         יותר מזל משכל
       </a> 
       <Search />

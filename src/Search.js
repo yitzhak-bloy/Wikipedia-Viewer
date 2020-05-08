@@ -33,17 +33,16 @@ const Search = () => {
 
   return (
     <div>
-      <h1>חיפוש</h1>
       <input 
         type="string" 
         name="quantity"           
         onChange={handleChange}
         className='inputRomanNumeralConverter'
         dir="rtl"
+        placeholder={'הקש לחיפוש'}
       />  
       <h1></h1> 
       <button onClick={handleClick} >חפש</button>
-      
      { 
       resp[0] ? 
           <SearchResult resp={resp} />
