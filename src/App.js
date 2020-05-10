@@ -11,7 +11,7 @@ const  App = () => {
       <a href="https://he.wikipedia.org/wiki/Special:Random" rel="noopener noreferrer" target="_blank" className="random" >
         יותר מזל משכל
       </a> 
-      <Search />
+        <Search />
     </div>
   );
 }

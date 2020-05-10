@@ -12,7 +12,13 @@ const Search = () => {
   };
 
   const handleClick = () => {
-    setSearch(input)
+    setSearch(input);
+  }
+
+  const handleKeyPress = (e) => {
+    if(e.which === 13) {
+      setSearch(input);
+    }
   }
 
   useEffect(() => {
@@ -35,11 +41,11 @@ const Search = () => {
     <div>
       <input 
         type="string" 
-        name="quantity"           
         onChange={handleChange}
-        className='inputRomanNumeralConverter'
+        className='input'
         dir="rtl"
         placeholder={'הקש לחיפוש'}
+        onKeyPress={handleKeyPress}
       />  
       <h1></h1> 
       <button onClick={handleClick} >חפש</button>
@@ -47,7 +53,7 @@ const Search = () => {
       resp[0] ? 
           <SearchResult resp={resp} />
       :
-        <p>" חפש או בחר " יותר מזל משכל</p>
+        null
       }
     </div>
   )

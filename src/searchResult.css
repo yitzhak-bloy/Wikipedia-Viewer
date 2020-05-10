@@ -10,20 +10,23 @@ a {
 }
 
 .result {
-  color: rgb(24, 19, 12);
+  color: rgb(255, 255, 255);
   padding: 10px;
-  border: black;
-  border: 3px solid green;
-  border-radius: 35px;
+  border: 3px solid rgb(217, 165, 179, 0.5);
+  border-radius: 15px;
   width: 300px;
   text-decoration: none;
-  background-color: rgb(255, 206, 133, 0.2);
+  background-color: rgb(224, 211, 211, 0.1);
   margin: 10px;
+  transition: all 0.3s ease 0s;
 }
 
 .result:hover {
-  color: rgb(0, 0, 0);
-  text-decoration: underline overline;
-  background-color: rgb(255, 206, 133, 0.4);
-
+  color: #ffffff;
+  text-decoration: underline ;
+  background-color: rgb(217, 165, 179, 0.3);
+  border-radius: 35px;
+  transition: all 0.4s ease 0s;
+  border: 3px solid 494949;
+  border-color: rgb(217, 165, 179) !important;
 }
