@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Wikipedia-Viewer/static/css/main.928d00ae.chunk.css",
+    "main.js": "/Wikipedia-Viewer/static/js/main.85f3813c.chunk.js",
+    "main.js.map": "/Wikipedia-Viewer/static/js/main.85f3813c.chunk.js.map",
+    "runtime-main.js": "/Wikipedia-Viewer/static/js/runtime-main.142185f6.js",
+    "runtime-main.js.map": "/Wikipedia-Viewer/static/js/runtime-main.142185f6.js.map",
+    "static/js/2.8f890d62.chunk.js": "/Wikipedia-Viewer/static/js/2.8f890d62.chunk.js",
+    "static/js/2.8f890d62.chunk.js.map": "/Wikipedia-Viewer/static/js/2.8f890d62.chunk.js.map",
+    "index.html": "/Wikipedia-Viewer/index.html",
+    "precache-manifest.dd0a9a774b9825717ca2bbfd206853ef.js": "/Wikipedia-Viewer/precache-manifest.dd0a9a774b9825717ca2bbfd206853ef.js",
+    "service-worker.js": "/Wikipedia-Viewer/service-worker.js",
+    "static/css/main.928d00ae.chunk.css.map": "/Wikipedia-Viewer/static/css/main.928d00ae.chunk.css.map",
+    "static/js/2.8f890d62.chunk.js.LICENSE.txt": "/Wikipedia-Viewer/static/js/2.8f890d62.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Wikipedia-Viewer/static/media/vladstudio_windypress_wallpaper.54516b54.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.142185f6.js",
+    "static/js/2.8f890d62.chunk.js",
+    "static/css/main.928d00ae.chunk.css",
+    "static/js/main.85f3813c.chunk.js"
+  ]
+}
